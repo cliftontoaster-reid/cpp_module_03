@@ -27,9 +27,10 @@ void ClapTrap::takeDamage(unsigned int amount) {
     std::cout << "ClapTrap " << name << " is already destroyed." << std::endl;
     return;
   }
-  hitPoints -= amount;
-  if (hitPoints < 0)
+  hitPoints -= static_cast<int>(amount);
+  if (hitPoints < 0) {
     hitPoints = 0;
+  }
   std::cout << "ClapTrap " << name << " takes " << amount
             << " points of damage!" << std::endl;
 }
@@ -45,7 +46,7 @@ void ClapTrap::beRepaired(unsigned int amount) {
     return;
   }
   energyPoints--;
-  hitPoints += amount;
+  hitPoints += static_cast<int>(amount);
   std::cout << "ClapTrap " << name << " is repaired by " << amount
             << " points! Current hit points: " << hitPoints << std::endl;
 }
