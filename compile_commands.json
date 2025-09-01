@@ -1,0 +1,173 @@
+[
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/main.o",
+      "main.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex00",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex00/main.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex00/target/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/ClapTrap.o",
+      "ClapTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex00",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex00/ClapTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex00/target/ClapTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/main.o",
+      "main.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex01",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex01/main.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex01/target/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/ClapTrap.o",
+      "ClapTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex01",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex01/ClapTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex01/target/ClapTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/ScavTrap.o",
+      "ScavTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex01",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex01/ScavTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex01/target/ScavTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/main.o",
+      "main.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex02",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex02/main.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex02/target/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/ClapTrap.o",
+      "ClapTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex02",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex02/ClapTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex02/target/ClapTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/ScavTrap.o",
+      "ScavTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex02",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex02/ScavTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex02/target/ScavTrap.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib64/ccache/clang",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-error=unused-command-line-argument",
+      "-g3",
+      "-std=c++11",
+      "-pipe",
+      "-c",
+      "-o",
+      "target/FragTrap.o",
+      "FragTrap.cpp"
+    ],
+    "directory": "/home/creid/Documents/42/cpp_module_03/ex02",
+    "file": "/home/creid/Documents/42/cpp_module_03/ex02/FragTrap.cpp",
+    "output": "/home/creid/Documents/42/cpp_module_03/ex02/target/FragTrap.o"
+  }
+]
