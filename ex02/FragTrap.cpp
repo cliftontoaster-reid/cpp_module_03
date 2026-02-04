@@ -1,11 +1,35 @@
 #include "FragTrap.hpp"
 #include <iostream>
 
+FragTrap::FragTrap() : ClapTrap("default") {
+  hitPoints = 100;
+  energyPoints = 100;
+  attackDamage = 30;
+  std::cout << "FragTrap " << name << " constructed." << std::endl;
+}
+
 FragTrap::FragTrap(const std::string &name) : ClapTrap(name) {
   hitPoints = 100;
   energyPoints = 100;
   attackDamage = 30;
   std::cout << "FragTrap " << name << " constructed." << std::endl;
+}
+
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other) {
+  hitPoints = other.hitPoints;
+  energyPoints = other.energyPoints;
+  attackDamage = other.attackDamage;
+  std::cout << "FragTrap " << name << " copy constructed." << std::endl;
+}
+
+FragTrap &FragTrap::operator=(const FragTrap &other) {
+  if (this != &other) {
+    ClapTrap::operator=(other);
+    hitPoints = other.hitPoints;
+    energyPoints = other.energyPoints;
+    attackDamage = other.attackDamage;
+  }
+  return *this;
 }
 
 FragTrap::~FragTrap() {

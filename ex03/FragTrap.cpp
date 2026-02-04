@@ -15,6 +15,23 @@ FragTrap::FragTrap(const std::string &name) : ClapTrap(name) {
   std::cout << "FragTrap " << name << " constructed." << std::endl;
 }
 
+FragTrap::FragTrap(const FragTrap &other) : ClapTrap(other) {
+  hitPoints = other.hitPoints;
+  energyPoints = other.energyPoints;
+  attackDamage = other.attackDamage;
+  std::cout << "FragTrap " << name << " copy constructed." << std::endl;
+}
+
+FragTrap &FragTrap::operator=(const FragTrap &other) {
+  if (this != &other) {
+    ClapTrap::operator=(other);
+    hitPoints = other.hitPoints;
+    energyPoints = other.energyPoints;
+    attackDamage = other.attackDamage;
+  }
+  return *this;
+}
+
 FragTrap::~FragTrap() {
   std::cout << "FragTrap " << name << " destructed." << std::endl;
 }

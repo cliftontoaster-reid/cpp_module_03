@@ -8,12 +8,11 @@ private:
   std::string name;
 
 public:
-  DiamondTrap();                                    // Default Constructor
-  DiamondTrap(std::string name);                    // Parametric Constructor
-  DiamondTrap(const DiamondTrap &other);            // Copy Constructor
-  DiamondTrap &operator=(const DiamondTrap &other); // Assignment Operator
-  ~DiamondTrap();                                   // Destructor
-
+  DiamondTrap();
+  DiamondTrap(std::string name);
+  DiamondTrap(const DiamondTrap &other);
+  DiamondTrap &operator=(const DiamondTrap &other);
+  ~DiamondTrap();
   using ScavTrap::attack;
 
   void whoAmI();
