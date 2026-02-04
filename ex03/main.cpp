@@ -1,4 +1,5 @@
 #include "ClapTrap.hpp"
+#include "DiamondTrap.hpp"
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 #include <iostream>
@@ -12,6 +13,7 @@ int main() {
   ClapTrap boss("Boss");
   ScavTrap scavenger("Scavenger");
   FragTrap frag("Fraggy");
+  DiamondTrap diamond("Diamond");
 
   hero.setAttackDamage(5);
   villain.setAttackDamage(6);
@@ -60,6 +62,18 @@ int main() {
   std::cout << "Fraggy requests a high five from the crowd!" << std::endl;
   frag.highFivesGuys();
 
+  // DiamondTrap special ability
+  std::cout << "\n=== DIAMONDTRAP SPECIAL ABILITY ===" << std::endl;
+  std::cout << "The mighty Diamond enters the arena!" << std::endl;
+  diamond.whoAmI();
+
+  std::cout << "Diamond attacks with immense power!" << std::endl;
+  diamond.attack("Boss");
+  boss.takeDamage(30);
+
+  std::cout << "Diamond reveals their identity once more!" << std::endl;
+  diamond.whoAmI();
+
   // Repair phase
   std::cout << "\n=== REPAIR PHASE ===" << std::endl;
   std::cout << "The Hero takes a moment to repair himself." << std::endl;
@@ -82,6 +96,12 @@ int main() {
             << std::endl;
   boss.attack("Villain");
   villain.takeDamage(8);
+
+  // DiamondTrap final attack
+  std::cout << "\n=== DIAMONDTRAP FINISHER ===" << std::endl;
+  std::cout << "Diamond delivers the final blow to the Boss!" << std::endl;
+  diamond.attack("Boss");
+  boss.takeDamage(25);
 
   std::cout << "\nThe battle concludes! The arena echoes with cheers and boos."
             << std::endl;
