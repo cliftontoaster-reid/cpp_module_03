@@ -26,6 +26,15 @@ endef
 all:
 	$(call run_target,all)
 
+re:
+	$(call run_target,re)
+
+clean:
+	$(call run_target,clean)
+
+fclean:
+	$(call run_target,fclean)
+
 help:
 	@echo "Usage: make [target]"
 	@echo "Targets:"
