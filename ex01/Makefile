@@ -15,10 +15,10 @@ SRCS     = \
 OBJS     = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 # TESTOBJS = $(patsubst $(TEST_DIR)/%.c,$(TEST_OBJD)/%.o,$(TESTS)) $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(filter-out $(SRC_DIR)/main.c,$(SRCS)))
 
-CFLAGS       = -Wall -Wextra -Werror -g3 -std=c++11 -pipe -MMD -MP
-FSAN_CFLAGS  = -Wall -Wextra -Werror -g3 -std=c++11 -pipe -fsanitize=address -fsanitize=leak -MMD -MP
-LDFLAGS      = -g3 -std=c++11 -pipe -lstdc++ -lm
-FSAN_LDFLAGS = -g3 -std=c++11 -pipe -lstdc++ -fsanitize=address -fsanitize=leak -lm
+CFLAGS       = -Wall -Wextra -Werror -g3 -std=c++98 -pipe -MMD -MP
+FSAN_CFLAGS  = -Wall -Wextra -Werror -g3 -std=c++98 -pipe -fsanitize=address -fsanitize=leak -MMD -MP
+LDFLAGS      = -g3 -std=c++98 -pipe -lstdc++ -lm
+FSAN_LDFLAGS = -g3 -std=c++98 -pipe -lstdc++ -fsanitize=address -fsanitize=leak -lm
 
 # Compiler preference: clang > gcc for main binary
 ifeq ($(shell which clang),)
